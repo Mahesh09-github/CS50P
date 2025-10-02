@@ -2,15 +2,16 @@
 def main():
     #asking user to promt a  greet
     greet=input("Greeting : ")
-    check(greet)
+    print(greeting(greet))
 
-def check(n):
+def greeting(n):
     n=n.lower().strip()
     if n=="hello":
-        print("$0")
+        return "$0"
     elif n.startswith("h"):
-          print("$20")
+          return "$20"
     else:
-         print("$100")
+         return "$100"
 
-main()
+if __name__ == "__main__":
+    main()
