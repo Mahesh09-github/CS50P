@@ -12,7 +12,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "subProcess": true
+            "subProcess": true,
+            "args": ["week6/before.csv", "week6/after.csv"]
         }
     ]
 }
