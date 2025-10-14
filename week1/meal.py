@@ -1,14 +1,17 @@
 def main():
     time_str=input("Enter the time: ")
     time=convert(time_str)
+    print(meal(time))
+
+def meal(time):
     if 7<=time<=8:
-        print("Breakfast Time")
+        return "Breakfast Time"
     elif 12<=time<=13:
-        print("Lunch Time")
+        return "Lunch Time"
     elif 18<=time<=19:
-        print("Dinner Time")
+        return "Dinner Time"
     else:
-        return
+        return "Snack Time"
 
 def convert(time):
     hours,minutes=map(int,time.split(":"))

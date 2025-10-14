@@ -1,6 +1,6 @@
 def main():
     print(f"Amount due: 50")
-    due()
+    print(due())
 
 
 def due():
@@ -11,12 +11,12 @@ def due():
             if  insert_coin in cents:
                 amount_due-=insert_coin
                 if amount_due>0:
-                     print(f"Amount Due: {amount_due}")
+                     return f"Amount Due: {amount_due}"
             else:
-                print(f"Amount due: {amount_due}")
+                return f"Amount due: {amount_due}"
     if amount_due<0:
-         print(f"Change Owed: {abs(amount_due)}")
+         return f"Change Owed: {abs(amount_due)}"
     else:
-         print("Change owed: 0")
+         return "Change owed: 0"
      
 main()
